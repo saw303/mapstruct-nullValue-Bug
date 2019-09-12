@@ -19,4 +19,6 @@ public interface BuggedMapper {
     // remove this annotation to trigger the bug described in https://github.com/mapstruct/mapstruct/issues/1790
     @Mapping(target = "name", source = "name", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     void toExistingCar(@MappingTarget CarDto carDto, CarModel carModel);
+
+    void toExistingCarWithBug(@MappingTarget CarDto carDto, CarModel carModel);
 }
