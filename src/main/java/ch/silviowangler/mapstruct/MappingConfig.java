@@ -1,0 +1,13 @@
+package ch.silviowangler.mapstruct;
+
+import org.mapstruct.MapperConfig;
+import org.mapstruct.NullValueCheckStrategy;
+
+/**
+ * @author Silvio Wangler
+ */
+@MapperConfig(
+        nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS
+)
+public class MappingConfig {
+}
