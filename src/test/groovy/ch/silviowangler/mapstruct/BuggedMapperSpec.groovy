@@ -28,7 +28,7 @@ class BuggedMapperSpec extends Specification {
         target.name == "My name is set"
     }
 
-    @PendingFeature(reason = "Mapstruct 1.3.0.Final contains a bug")
+    //@PendingFeature(reason = "Mapstruct 1.3.0.Final & 1.3.1.Final contains a bug")
     @Issue("https://github.com/mapstruct/mapstruct/issues/1790")
     void "Null value should not be mapped (Bug)"() {
 
