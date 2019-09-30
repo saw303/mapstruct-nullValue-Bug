@@ -8,8 +8,7 @@ import org.mapstruct.NullValuePropertyMappingStrategy;
  * @author Silvio Wangler
  */
 @MapperConfig(
-        nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS,
-        nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE
+        nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS
 )
 public class MappingConfig {
 }
